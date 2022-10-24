@@ -16,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.wondriumcodingchallenge.presentation.Screen
 import com.example.wondriumcodingchallenge.presentation.course_detail.components.CourseDetailScreen
 import com.example.wondriumcodingchallenge.presentation.course_list.components.CourseListScreen
+import com.example.wondriumcodingchallenge.presentation.video_player.components.VideoPlayerScreen
 import com.example.wondriumcodingchallenge.ui.theme.WondriumCodingChallengeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,7 +26,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             WondriumCodingChallengeTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -44,6 +44,11 @@ class MainActivity : ComponentActivity() {
                             route = Screen.CourseDetailScreen.route
                         ) {
                             CourseDetailScreen(navController = navController)
+                        }
+                        composable(
+                            route = Screen.VideoPlayerScreen.route
+                        ) {
+                            VideoPlayerScreen()
                         }
                     }
                 }
