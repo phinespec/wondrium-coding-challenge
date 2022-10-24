@@ -2,7 +2,8 @@ package com.example.wondriumcodingchallenge.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val LightCyan = Color(0xFFD9FFF5)
+val MagicMint = Color(0xFFB9F5D8)
+val TurquoiseGreen = Color(0xFFAAD2BA)
+val RussianGreen = Color(0xFF6B8F71)
+val BlackChocolate = Color(0xFF1D1E18)
